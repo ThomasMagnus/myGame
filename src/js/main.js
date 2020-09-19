@@ -175,7 +175,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		document.querySelectorAll('.enemy img').forEach(item => item.remove())
 		document.querySelectorAll('.line').forEach(item => item.remove())
 		carImg.remove()
-		settings.y = gameArea.offsetHeight - car.offsetHeight
+		settings.y = gameArea.offsetHeight - (car.offsetHeight + 10)
 		settings.x = 225
 
 		modalGame.style.transform = `scale(0)`
